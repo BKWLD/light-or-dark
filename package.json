@@ -1,5 +1,5 @@
 {
-  "name": "light-or-dark",
+  "name": "@bkwld/light-or-dark",
   "version": "1.0.0",
   "description": "Return whether a hex or rgb color is light or dark",
   "main": "index.js",
