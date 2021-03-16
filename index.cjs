@@ -1,10 +1,14 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /**
  * Return "light" or "dark". Accepts a hex or rgba string
  *
  * @param {string} color
  * @returns {boolean}
  */
-export function lightOrDark(color) {
+function lightOrDark(color) {
 
 	// Variables for red, green, blue values
 	var r, g, b, hsp;
@@ -52,7 +56,7 @@ export function lightOrDark(color) {
  * @param {string} color
  * @returns {boolean}
  */
-export function isDark(color) {
+function isDark(color) {
 	return lightOrDark(color) == 'dark'
 }
 
@@ -62,6 +66,10 @@ export function isDark(color) {
  * @param {string} color
  * @returns {boolean}
  */
-export function isLight(color) {
+function isLight(color) {
 	return lightOrDark(color) == 'light'
 }
+
+exports.isDark = isDark;
+exports.isLight = isLight;
+exports.lightOrDark = lightOrDark;
